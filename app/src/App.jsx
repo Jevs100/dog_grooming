@@ -1,120 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+    <div className="main-page">
+      <header className="site-header">
+        <a className="logo" href="/" aria-label="GWSCWM Grooms home">
+          <span className="logo-mark" aria-hidden="true">
+            <img src="/dogs_groomed.png" alt="" />
+          </span>
+          <span className="logo-text">
+            <span className="logo-title">Gwscwm Grooms</span>
+            <span className="logo-subtitle">Dog Grooming</span>
+          </span>
+        </a>
+
+
+        <a className="header-cta" href="#contact">
+          Let&apos;s groom
+        </a>
+      </header>
+
+      <main className="hero">
+        <div className="hero-copy">
+          <p className="eyebrow">Gentle, stylish dog grooming in South Wales</p>
+          <h1>Grooms that never let your dog down</h1>
+          <p className="hero-text">
+            Stress-conscious washes, trims, tidy-ups and full pamper sessions for
+            dogs that deserve to look sharp and feel settled.
           </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
 
-      <div className="ticks"></div>
+          <div className="hero-actions">
+            <a className="primary-button" href="#contact">
+              Book a groom
+            </a>
+            <p className="trust-line">Calm handling, clean finishes, happy tails.</p>
+          </div>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+          <div className="hero-highlights" aria-label="Service highlights">
+            <span>Bath &amp; brush</span>
+            <span>Puppy intros</span>
+            <span>Full groom sessions</span>
+          </div>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+        <div className="hero-art">
+          <div className="art-card">
+            <img src="/dogs_groomed.png" alt="Illustration of freshly groomed dogs" />
+          </div>
+        </div>
+      </main>
+    </div>
   )
 }
 
