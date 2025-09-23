@@ -129,15 +129,15 @@
   align-items: center;
   gap: 28px;
   margin: 10px 60px 20px;
-  padding: 76px 56px;
+  padding: 56px 56px;
   border-radius: 36px;
   background: linear-gradient(135deg, rgba(255, 250, 241, 0.9) 0%, rgba(247, 244, 234, 0.96) 100%);
   border: 1px solid rgba(30, 22, 17, 0.08);
   position: relative;
-  min-height: 640px;
+  min-height: 400px;
 }
 
-.hero-copy {
+.hero-content {
   position: relative;
   z-index: 1;
   max-width: 680px;
@@ -146,9 +146,9 @@
 }
 
 .eyebrow {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: rgba(30, 22, 17, 0.62);
@@ -188,12 +188,6 @@
   color: rgba(30, 22, 17, 0.68);
 }
 
-.hero-highlights {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 34px;
-}
 
 .hero-highlights span {
   padding: 10px 16px;
@@ -244,7 +238,7 @@
     border-radius: 28px;
   }
 
-  .hero-copy {
+  .hero-content {
     max-width: none;
   }
 

@@ -21,12 +21,11 @@ function App() {
       </header>
 
       <main className="hero">
-        <div className="hero-copy">
+        <div className="hero-content">
           <p className="eyebrow">Gentle, stylish dog grooming in South Wales</p>
           <h1>Grooms that never let your dog down</h1>
           <p className="hero-text">
-            Stress-conscious washes, trims, tidy-ups and full pamper sessions for
-            dogs that deserve to look sharp and feel settled.
+            Calm washes, tidy trims, and full grooms for dogs that look sharp and feel settled.
           </p>
 
           <div className="hero-actions">
@@ -36,11 +35,7 @@ function App() {
             <p className="trust-line">Calm handling, clean finishes, happy tails.</p>
           </div>
 
-          <div className="hero-highlights" aria-label="Service highlights">
-            <span>Bath &amp; brush</span>
-            <span>Puppy intros</span>
-            <span>Full groom sessions</span>
-          </div>
+
         </div>
 
         <div className="hero-art">
