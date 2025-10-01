@@ -8,7 +8,7 @@ function App() {
       <Header />
       <Hero />
       <div className="services">
-        <h2>
+        <h2 >
           These are the services we offer
         </h2>
         <div className="service-list">
@@ -27,6 +27,20 @@ function App() {
             <p>A calm introduction to grooming with a gentle wash, light trim, and a spritz of doggy cologne. Great for puppies or dogs new to grooming.</p>
           </div>
         </div>
+      </div>
+
+      <div>
+        <h2>
+          A Bit About Mysql Section 
+        </h2>
+      </div>
+
+      <div>
+        <h2> I'm not sure what this section is yet</h2>
+      </div>
+
+      <div id="footer">
+        <p>© 2024 Gwscwm Grooms. All rights reserved.</p>
       </div>
 
     </div>
